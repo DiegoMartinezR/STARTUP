@@ -1,12 +1,6 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
-
-// core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -14,10 +8,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
-
-// Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
@@ -40,7 +31,7 @@ export default function LandingPage(props) {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
@@ -48,11 +39,14 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Alquila habitaciones cerca de tu centro de estudios.</h1>
+              <h1 className={classes.title}>
+                Alquila habitaciones cerca de tu centro de estudios.
+              </h1>
               <h4>
-              ¿Vives lejos de tu institución?. ¿Tardas horas en el transcurso de traslado de ida y regreso?.
-              ¿No tienes suficiente tiempo?. ForRent te facilita la vida ubicandote una habitación o departamento muy cerca a tu
-              centro de estudios.
+                ¿Vives lejos de tu institución?. ¿Tardas horas en el transcurso
+                de traslado de ida y regreso?. ¿No tienes suficiente tiempo?.
+                ForRent te facilita la vida ubicandote una habitación o
+                departamento muy cerca a tu centro de estudios.
               </h4>
               <br />
               <Button
@@ -73,7 +67,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <TeamSection />
-          <BenefitSection/>
+          <BenefitSection />
           <WorkSection />
         </div>
       </div>
