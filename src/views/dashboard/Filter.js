@@ -1,10 +1,7 @@
 import React from "react";
-import Link from "@material-ui/core/Link";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Steper from "./Steper";
 import Title from "./Title";
-import SteperMonth from "./Stepermonth";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Slider from "@material-ui/core/Slider";
 import TextField from "@material-ui/core/TextField";
@@ -13,11 +10,6 @@ import InputLabel from "@material-ui/core/InputLabel";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
-import Icon from "@material-ui/core/Icon";
-
-function preventDefault(event) {
-  event.preventDefault();
-}
 
 const useStyles = makeStyles({
   depositContext: {
