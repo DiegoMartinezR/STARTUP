@@ -22,10 +22,12 @@ import Avatar from '@material-ui/core/Avatar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import InputLabel from '@material-ui/core/InputLabel';
 
+
 import { mainListItems, secondaryListItems } from './listItems';
 //import Chart from './Chart';
 import Deposits from './Deposits';
 import Filter from './Filter';
+import Map from './Map'
 //import Orders from './Orders';
 
 function Copyright() {
@@ -192,7 +194,7 @@ export default function Dashboard() {
 
             <Grid item xs={12} md={8} lg={9}>
               <Paper className={fixedHeightPaper}>
-                {/* <Chart />  */}
+                 <Map></Map>
               </Paper>
             </Grid>
 
