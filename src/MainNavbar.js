@@ -119,7 +119,7 @@ export default function MainNavbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Mini variant drawer
+            FoRent
           </Typography>
         </Toolbar>
       </AppBar>
