@@ -30,7 +30,7 @@ export default function CardItem({ favorito }) {
         title={favorito.description}
       />
       <CardContent className={classes.cardContent}>
-        <Typography gutterBottom variant="h5" component="h5" color="primary">
+        <Typography gutterBottom variant="h5" component="h5">
           {favorito.description}
         </Typography>
         {/* <Typography variant="body2" color="textSecondary" component="p">

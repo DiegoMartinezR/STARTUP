@@ -28,7 +28,7 @@ const RoutesDasboard = () => {
       <MainNavbar />
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Route exact path="/" render={() => <Dashboard />} />
+        <Route exact path="/dashboard" render={() => <Dashboard />} />
         <Route exact path="/dashboard/reservas" render={() => <Reservas />} />
         <Route
           exact

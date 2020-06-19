@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Filter from "./Filter";
 import Map from "./Map";
+import { Typography } from "@material-ui/core";
 
 const drawerWidth = 240;
 
@@ -17,9 +18,12 @@ const useStyles = makeStyles((theme) => ({
     overflow: "auto",
   },
   container: {
-    marginTop: theme.spacing(15),
+    marginLeft: theme.spacing(10),
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+  },
+  typography: {
+    marginBottom: theme.spacing(6),
   },
   paper: {
     padding: theme.spacing(2),
@@ -37,7 +41,10 @@ export default function Dashboard() {
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
-    <Container maxWidth="md" className={classes.container}>
+    <Container maxWidth="lg" className={classes.container}>
+      <Typography variant="h4" className={classes.typography}>
+        Reserva
+      </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={8} lg={9}>
           <Paper className={fixedHeightPaper}>

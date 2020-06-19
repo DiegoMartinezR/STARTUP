@@ -13,7 +13,6 @@ ReactDOM.render(
     <Switch>
       <Route path="/dashboard" component={RoutesDasboard} />
       <Route path="/register" component={RegisterPage} />
-      <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login" component={LoginPage} />
       <Route path="/" component={LandingPage} />
     </Switch>

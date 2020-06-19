@@ -17,6 +17,12 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
+import Star from "@material-ui/icons/Star";
+import Exit from "@material-ui/icons/ExitToApp";
+import Person from "@material-ui/icons/Person";
+import Map from "@material-ui/icons/Room";
+import Domain from "@material-ui/icons/Domain";
+import Coment from "@material-ui/icons/Comment";
 import { useHistory } from "react-router-dom";
 
 const drawerWidth = 240;
@@ -148,18 +154,29 @@ export default function MainNavbar() {
         <Divider />
         <List>
           {[
-            { path: "/dashboard/reservas", name: "Reservas" },
-            { path: "/dashboard/favoritos", name: "Favoritos" },
-            { path: "/dashboard/comentarios", name: "Comentarios" },
+            {
+              path: "/dashboard",
+              name: "Buscar Anuncio",
+              icon: <Map />,
+            },
+            { path: "/dashboard/reservas", name: "Reservas", icon: <Domain /> },
+            {
+              path: "/dashboard/favoritos",
+              name: "Favoritos",
+              icon: <Star />,
+            },
+            {
+              path: "/dashboard/comentarios",
+              name: "Comentarios",
+              icon: <Coment />,
+            },
           ].map((text, index) => (
             <ListItem
               button
               key={index}
               onClick={() => history.push(text.path)}
             >
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
+              <ListItemIcon>{text.icon}</ListItemIcon>
               <ListItemText primary={text.name} />
             </ListItem>
           ))}
