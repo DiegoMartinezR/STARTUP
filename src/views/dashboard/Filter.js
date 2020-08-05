@@ -50,6 +50,8 @@ const PrettoSlider = withStyles({
 export default function Deposits() {
   const [state, setState] = React.useState({
     age: "",
+    pais: "",
+    depart: "",
     name: "hai",
   });
 
@@ -96,7 +98,7 @@ export default function Deposits() {
         className={classes.selectEmpty}
         inputProps={{ "aria-label": "age" }}
       >
-        <option value="">Todos</option>
+        <option value={35}>Todos</option>
         <option value={10}>Ate</option>
         <option value={20}>Lima</option>
         <option value={30}>Los Olivos</option>
@@ -109,17 +111,17 @@ export default function Deposits() {
       </Typography>
 
       <NativeSelect
-        value={state.age}
+        value={state.pais}
         onChange={handleChange}
-        name="age"
+        name="pais"
         className={classes.selectEmpty}
-        inputProps={{ "aria-label": "age" }}
+        inputProps={{ "aria-label": "pais" }}
       >
-        <option value="">Todos</option>
-        <option value={10}>Habitación privada</option>
-        <option value={10}>Habitación de hospedaje</option>
-        <option value={10}>Habitación compartida</option>
-        <option value={20}>Departamento entero</option>
+        <option value={15}>Todos</option>
+        <option value={40}>Habitación privada</option>
+        <option value={50}>Habitación de hospedaje</option>
+        <option value={60}>Habitación compartida</option>
+        <option value={70}>Departamento entero</option>
       </NativeSelect>
       <br></br>
 
@@ -133,17 +135,17 @@ export default function Deposits() {
       <Divider />
       <br></br>
       <NativeSelect
-        value={state.age}
+        value={state.depart}
         onChange={handleChange}
-        name="age"
+        name="depart"
         className={classes.selectEmpty}
-        inputProps={{ "aria-label": "age" }}
+        inputProps={{ "aria-label": "depart" }}
       >
-        <option value="">Ninguno</option>
-        <option value={10}>Más destacado</option>
-        <option value={20}>Más comentado</option>
-        <option value={20}>Más antiguo</option>
-        <option value={20}>Más reciente</option>
+        <option value={25}>Ninguno</option>
+        <option value={80}>Más destacado</option>
+        <option value={90}>Más comentado</option>
+        <option value={100}>Más antiguo</option>
+        <option value={110}>Más reciente</option>
       </NativeSelect>
 
       <br></br>

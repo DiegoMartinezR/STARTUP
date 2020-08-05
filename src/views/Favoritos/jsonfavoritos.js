@@ -19,37 +19,5 @@ export default [
     precio: 500,
     ubicacion: "Los olivos",
   },
-  {
-    img: "https://definicion.de/wp-content/uploads/2019/12/habitacion.jpg",
-    description: "Habitacion en Manchay",
-    precio: 500,
-    ubicacion: "Manchay",
-  },
-  {
-    img:
-      "https://cdn2.petitpalace.com/wp-content/uploads/2017/10/petit-palace-lealtad-plaza-habitacion-doble-040-1024x683.jpg",
-    description: "Habitacion en Buenos Aires",
-    precio: 500,
-    ubicacion: "Buenos Aires",
-  },
-  {
-    img:
-      "https://d1bvpoagx8hqbg.cloudfront.net/originals/habitaciones-lima-peru-bedrooms-in-lima-peru-e75cee73af6dd3c0415293943a5eed9e.jpg",
-    description: "Habitacion en Callao",
-    precio: 500,
-    ubicacion: "Callao",
-  },
-  {
-    img: "https://q-cf.bstatic.com/images/hotel/max1024x768/120/120642433.jpg",
-    description: "Habitacion en Callao",
-    precio: 500,
-    ubicacion: "Callao",
-  },
-  {
-    img:
-      "https://hotelvillasolperu.com/wp-content/uploads/villasonperu-matrimonialestandar2-980x655.jpg",
-    description: "Habitacion en Callao",
-    precio: 500,
-    ubicacion: "Callao",
-  },
+  
 ];

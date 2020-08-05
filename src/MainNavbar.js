@@ -129,6 +129,8 @@ export default function MainNavbar() {
           </Typography>
         </Toolbar>
       </AppBar>
+
+      
       <Drawer
         variant="permanent"
         className={clsx(classes.drawer, {

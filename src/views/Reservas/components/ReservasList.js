@@ -41,11 +41,11 @@ const rows = [
     "La Molina"
   ),
   createData(
-    "Mini Departamento",
+    "Habitacion",
     "18 de junio de 2020",
     "18 de junio de 2020",
-    "2000",
-    "Santa Anita"
+    "600",
+    "Ate"
   ),
 ];
 
@@ -215,7 +215,7 @@ const EnhancedTableToolbar = (props) => {
           id="tableTitle"
           component="div"
         >
-          Nutrition
+          Reservas 
         </Typography>
       )}
 

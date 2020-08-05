@@ -6,7 +6,7 @@ import LandingPage from "views/LandingPage/LandingPage.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import RegisterPage from "views/RegisterPage/RegisterPage.js";
-import RoutesDasboard from "RoutesDasboard";
+import RoutesDasboard from "RoutesDasboard.js";
 
 ReactDOM.render(
   <Router>
